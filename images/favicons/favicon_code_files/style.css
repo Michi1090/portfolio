@@ -1,0 +1,1146 @@
+
+.global_header {
+	margin-top: 5px;
+}
+
+.homepage_full_form {
+	margin-top: 3em;
+}
+
+.homepage_full_form > div {
+	margin-bottom: 3em;
+}
+
+@media (min-width: 1000px) {
+	.homepage_full_form {
+		display: table;
+		width: 100%;
+	}
+
+	.homepage_full_form > div {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+	}
+}
+
+#homepage_header .icons_title {
+	text-align: center;
+	margin-top: 2em;
+	font-size: 170%;
+}
+
+#homepage_header .icons_list {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+#homepage_header .icons_list span {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#favicon_uploader p {
+	margin-top: 5px;
+}
+
+#favicon_uploader_form {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+#favicon_uploader_form button {
+  width: 100%;
+}
+
+#favicon_form_container h2 {
+	margin-top: 3px;
+}
+
+#favicon_form h3 {
+	font-size: 20px;
+}
+
+#favicon_form label {
+	font-weight: normal !important;
+}
+
+#desktop_favicon_background_color, #ios_favicon_background_color, #w8_favicon_background_color {
+	width: 100px;
+	font-family: Courier;
+}
+
+#demo_favicon_uploader button, #demo_favicon_uploader a {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+#demo_favicon_uploader hr {
+	width: 10em;
+}
+
+#demo_favicon_uploader hr:after {
+	content: "or";
+	display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 0.25em;
+	background-color: #fff;
+}
+
+#favicon_demo_button img {
+	padding-left: 7px;
+}
+
+#not_in_root_checkbox {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.favicon_preview_free_height_container {
+	width: 224px;
+	border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: center;
+	padding-top: 1em;
+}
+
+.favicon_preview_container {
+	width: 224px;
+	height: 266px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+#check_favicon h3 {
+	font-size: 1.3em;
+	margin-bottom: 0.2em;
+}
+
+#check_favicon h2 {
+	margin-top: 2em;
+}
+
+/* Desktop */
+
+.desktop-favicon-previews {
+  margin-bottom: 4px;
+}
+
+#desktop_favicon h4 {
+  /* This specific settings is used to bottom-align browser tabs and google results */
+  margin-bottom: 8px;
+}
+
+.desktop_editor_preview {
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+}
+
+.handmade-favicon-offer {
+  margin-bottom: 0;
+}
+
+.handmade-favicon-offer h3 {
+  margin-top: 0;
+}
+
+.handmade-favicon-offer ul {
+  padding-left: 0;
+}
+
+.handmade-favicon-offer li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.handmade-favicon-offer p {
+  margin-bottom: 5px;
+}
+
+/* iOS */
+
+#ios_favicon_icon_sample_container {
+	position: relative;
+	height: 254px;
+}
+
+#ios_favicon_home_screen {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	border: 0;
+}
+
+.ios_favicon_preview {
+	position: absolute;
+	left: 83px;
+	top: 91px;
+	width: 57px;
+	height: 57px;
+	border: 0;
+}
+
+#ios_favicon_icon_black_background {
+	z-index: 2;
+	background-color: #000;
+}
+
+#ios_favicon_icon_background {
+	z-index: 2;
+	background-color: #fff;
+}
+
+.ios_favicon_preview_picture {
+	z-index: 3;
+}
+
+#ios_favicon_home_screen_transparent_window {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 4;
+	border: 0;
+}
+
+#ios_background_color_form {
+	margin-top: 5px;
+}
+
+.pick_color_notice {
+	margin-left: 10px;
+}
+
+#desktop_background_radius_container, #desktop_image_size_container, #ios_margin_size_container {
+	margin-left: 10px;
+}
+
+/* Android */
+
+#android_preview_switcher {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#android_favicon_icon_sample_container {
+	position: relative;
+}
+
+#android_favicon_home_screen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+.android_favicon_preview {
+	position: absolute;
+	top: 105px;
+	left: 90px;
+	width: 45px;
+	height: 45px;
+}
+
+.android_favicon_preview_picture {
+	z-index: 5;
+}
+
+.android_favicon_preview_container_background {
+	z-index: 4;
+	background-color: #ffffff;
+}
+
+#android_favicon_home_screen_transparent_icon {
+	position: absolute;
+	z-index: 5;
+	top: 0px;
+	left: 0px;
+}
+
+#android_favicon_caption {
+	position: absolute;
+	z-index: 6;
+	top: 153px;
+	left: 88px;
+	width: 49px;
+	height: 24px;
+	font-size: 9px;
+	color: #fbfbfb;
+	text-shadow: 0px 1px 2px #273638;
+	font-family: Tahoma, Verdana, Arial;
+	text-align: center;
+}
+
+#android_switcher_sample_container {
+	position: relative;
+}
+
+#android_theme_bar_preview {
+	position: absolute;
+	left: 23px;
+	top: 130px;
+	z-index: 4;
+	width: 178px;
+	height: 19px;
+	background-color: #ffffff;
+}
+
+.android_theme_bar_preview_cross {
+	position: absolute;
+	left: 188px;
+	top: 136px;
+	z-index: 5;
+	width: 6px;
+	height: 6px;
+}
+
+.android_theme_bar_preview_icon {
+	position: absolute;
+	left: 29px;
+	top: 133px;
+	z-index: 5;
+	width: 12px;
+	height: 12px;
+}
+
+.android_theme_bar_preview_title {
+	position: absolute;
+	left: 46px;
+	top: 135px;
+	z-index: 5;
+	height: 12px;
+	font-size: 6px;
+	color: #494949;
+}
+
+.color_field {
+	width: 100px;
+	font-family: Courier;
+}
+
+#android_app_name {
+	width: 200px;
+}
+
+#android_theme_navigation {
+	position: absolute;
+	left: 24px;
+	top: 150px;
+	z-index: 5;
+	width: 176px;
+	height: 9px;
+}
+
+#android_splash_sample_container {
+	position: relative;
+}
+
+#android_favicon_splash_screen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	z-index: 1;
+}
+
+#android_splash_title {
+	position: absolute;
+	left: 0px;
+	top: 220px;
+	width: 224px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.master_picture_thumbnail {
+	width: 130px;
+	height: 130px;
+	background: url(/transparency_background.png);
+}
+
+#android_chrome_picture_dedicated_container {
+}
+
+.dedicated_picture_spinner {
+	padding-top: 60px;
+	padding-left: 102px;
+}
+
+#android_theme_color_form {
+	padding-top: 5px;
+}
+
+#android_start_url {
+	width: 200px;
+}
+
+/* W8 */
+
+#w8_favicon_sample_container {
+	position: relative;
+	height: 224px;
+}
+
+#w8_favicon_home_screen {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	border: 0;
+}
+
+#w8_favicon_background {
+	position: absolute;
+	left: 114px;
+	top: 114px;
+	z-index: 2;
+	width: 101px;
+	height: 101px;
+	background-color: #da532c;
+	border: 0;
+}
+
+.w8_favicon_preview {
+	position: absolute;
+	left: 139px;
+	top: 139px;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+	border: 0;
+}
+
+#favicon_options_container {
+	margin-bottom: 20px;
+}
+
+/* Safari Pinned Tab */
+
+.safari_pinned_tab_single_preview, .desktop_tab_single_preview {
+	margin-bottom: 1em;
+	position: relative;
+  width: 222px;
+}
+
+.safari_pinned_tab_single_preview {
+	height: 50px;
+}
+
+.safari_pinned_tab_single_preview_background_image {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	border: 0;
+}
+
+.safari_pinned_tab_background {
+	position: absolute;
+	left: 94px;
+	top: 8px;
+	z-index: 2;
+	width: 34px;
+	height: 34px;
+}
+
+#safari_touch_bar_background_color {
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	width: 222px;
+	height: 50px;
+	background-color: #5bbad5;
+}
+
+#safari_touch_bar_image {
+	position: absolute;
+	z-index: 2;
+	left: 97px;
+	top: 11px;
+	width: 28px;
+	height: 28px;
+}
+
+#safari_pinned_tab_no_focus_background {
+	background-color: #7b7b7b;
+}
+
+#safari_pinned_tab_focus_background {
+	background-color: #5bbad5;
+}
+
+.safari_pinned_tab_single_preview_mask {
+	position: absolute;
+	left: 94px;
+	top: 8px;
+	z-index: 3;
+}
+
+/* Facebook - Try the editor */
+
+.try-facebook-button-container {
+	margin-top: 4em;
+}
+
+/* Other platforms */
+
+.tab-pane p {
+	margin-top: 15px;
+}
+
+/* Options */
+
+#compression_progress_bar {
+	margin-top: 10px;
+}
+
+#scale_progress_bar {
+	margin-top: 10px;
+}
+
+/* FAQ */
+
+#faq_entries > dd {
+	padding-bottom: 20px;
+}
+
+#faq_entries dd dl dd {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 4em;
+	padding-top: 2px;
+	clear: both;
+	margin-bottom: 40px;
+	color: #777;
+	border-top: solid 1px #ddd;
+}
+
+footer .footer_social_links {
+	margin-bottom: 0.8em;
+}
+
+footer .footer_social_links a {
+	text-decoration: none;
+}
+
+footer a {
+	text-decoration: none;
+	color: #777;
+}
+
+@media (max-width: 600px) {
+	footer a {
+		display: inline-block;
+		margin-bottom: 1.2em;
+		margin-right: 1em;
+	}
+}
+
+.donation_overall_container {
+	width: 15em;
+	margin: 0;
+}
+
+.donation_out_of_sight_container {
+	left: -20em;
+	position: absolute;
+}
+
+.donation_page_form {
+	width: 25em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.donation_button span {
+	margin-right: 1.5em;
+}
+
+#homepage_header {
+	padding-bottom: 20px;
+}
+
+#favicon_generators_comparison thead th {
+	padding-top: 0px;
+	text-align: center;
+}
+
+#favicon_generators_comparison .bad_favicon {
+	text-align: center;
+}
+
+#favicon_generators_comparison .good_favicon {
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+/* Favicon code */
+
+.favicon_package_link {
+	display: inline;
+}
+
+.favicon_install_instructions li {
+	margin-bottom: 10px;
+}
+
+.favicon_code_container {
+	position: relative;
+	margin-top: 0.2em;
+}
+
+.copy_code_button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.favicon_code_icon {
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	text-align: center;
+}
+
+.favicon_code_icon img {
+	display: inline;
+}
+
+/* AddThis */
+
+.addthis_header_buttons {
+	float: right;
+	height: 80px;
+	margin-top: 40px;
+	line-height: 40px;
+}
+
+.addthis_header_buttons a {
+	margin-bottom: 8px;
+}
+
+.addthis_body_buttons {
+
+}
+
+/* See http://stackoverflow.com/questions/17128730/right-border-of-the-addthis-counter-missing-with-twitters-bootstrap-3 */
+.addthis_counter
+{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.favicon_install_instructions {
+	padding-top: 10px;
+}
+
+.favicon_install_instructions pre {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+}
+
+#sharing_with_preview_container {
+	margin-top: 2em;
+}
+
+#sharing_with_preview_container h2 {
+	font-size: 18px;
+}
+
+/* Checker */
+
+#analysis_progress {
+	text-align: center;
+}
+
+#on_error {
+	margin-bottom: 55px;
+}
+
+/* Change log */
+
+#change_log .importance {
+	text-align: center;
+	font-weight: bold;
+}
+
+#change_log .version {
+	text-align: center;
+}
+
+/* Favicon Test */
+
+#favicon_test_form label {
+	font-weight: bold !important;
+}
+
+.favicon_thumbnail {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.test_question {
+	padding-top: 20px;
+}
+
+.test_favicon_choice {
+	width: 100%;
+}
+
+.test_favicon_choice td {
+	vertical-align: top;
+}
+
+.test_favicon_submit_button {
+	margin-top: 30px;
+}
+
+.test-color-presentation {
+	display: inline-block;
+	width: 1.5em;
+}
+
+/* Favicon compatibility */
+
+.compatibility_table .version {
+	text-align: center;
+}
+
+.footnote_link {
+	font-size: 75%;
+	vertical-align: super;
+}
+
+/* API */
+
+.api_param_values {
+	margin-left: 20px;
+}
+
+#favicon_editor_wait_message {
+	text-align: center;
+}
+
+#key_generation_message {
+	text-align: center;
+}
+
+#api_favicon_editor_container {
+	margin-top: 15px;
+}
+
+.non-interactive-api-doc {
+	counter-reset: sec1;
+}
+
+.non-interactive-api-doc h3 {
+	counter-reset: sec2;
+}
+
+.non-interactive-api-doc h4 {
+	counter-reset: sec3;
+}
+
+.non-interactive-api-doc h4 {
+	counter-reset: sec4;
+}
+
+.non-interactive-api-doc h3:before {
+	counter-increment: sec1;
+	content: counter(sec1) ". ";
+}
+
+.non-interactive-api-doc h4:before {
+	counter-increment: sec2;
+	content: counter(sec1) "." counter(sec2) ". ";
+}
+
+.non-interactive-api-doc h5:before {
+	counter-increment: sec3;
+	content: counter(sec1) "." counter(sec2) "." counter(sec3) ". ";
+}
+
+.non-interactive-api-doc h6:before {
+	counter-increment: sec4;
+	content: counter(sec1) "." counter(sec2) "." counter(sec3) "." counter(sec4) ". ";
+}
+
+
+.error_document {
+	font-family: Courier New;
+}
+
+#bitcoin_donation_button_container a {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#bitcoin_donation_button_container span {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.donation_button_container {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.donation_button_container p {
+	text-align: center;
+}
+
+.donation_button_container select {
+	width: 60%;
+	display: inline-block;
+}
+
+.donation_amounts label {
+	margin-bottom: 0.7em;
+	width: 60%;
+}
+
+.donation_native_button {
+  width: 60%;
+}
+
+.donation_metamask_button {
+  display: inline-block;
+}
+
+.donation_button_container hr:after {
+	content: "or";
+	display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 0.25em;
+	background-color: #fff;
+}
+
+.well .donation_button_container hr:after {
+	background-color: #f5f5f5;
+}
+
+.donation_feedback_form {
+	margin-top: 1em;
+}
+
+.donation_feedback_form_content {
+	text-align: left;
+}
+
+#share_favicon_modal .spinner-container {
+	text-align: center;
+}
+
+.share-buttons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.share-buttons li {
+  display: inline;
+}
+
+.share-buttons li + li {
+  margin-left: 1.5em;
+}
+
+.share-buttons .fb-share-button {
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+
+.featured-favicon-container {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.featured-favicon {
+	display: inline-block;
+	text-align: left;
+}
+
+@media (min-width: 1200px) {
+	.featured-favicon .share-preview-buttons {
+		margin-top: 20px;
+		text-align: right;
+	}
+}
+
+@media (min-width: 768px) {
+	.featured-favicon {
+		max-width: 75%;
+	}
+}
+
+@media (min-width: 992px) {
+	.featured-favicon {
+		max-width: 65%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.featured-favicon {
+		max-width: 55%;
+	}
+}
+
+.featured-favicon .preview-image-container {
+	text-align: center;
+}
+
+.addthis_compact_buttons {
+	display: inline-block;
+}
+
+.create-favicon-container {
+	text-align: center;
+}
+
+.featured-favicon img {
+	margin-bottom: 2em;
+}
+
+.featured-favicon button {
+	margin-top: 0.5em;
+}
+
+#report-container .presentation {
+	max-width: 150px;
+}
+
+#report-container .platform-name {
+	margin: 0;
+}
+
+#report-container .messages {
+	margin-bottom: 0;
+}
+
+#report-container .media {
+	margin-bottom: 3em;
+}
+
+/* Tested plan */
+
+#plan-testing {
+	font-size: 18px;
+}
+
+.plan-testing-form {
+	text-align: center;
+}
+
+#plan-testing .features-list li span {
+	margin-right: 0.5em;
+}
+
+#plan-testing .features-list li {
+	margin-bottom: 0.3em;
+}
+
+.cdn-option-container {
+	margin-left: 1em;
+}
+
+/* End of tested plan */
+
+/* Favicon/Social checker form */
+
+.hidden-sm .checker-form > div {
+	min-width: 600px;
+}
+
+.checker-form select[name="protocol"] {
+	min-width: 70px;
+	max-width: 100px;
+}
+
+.checker-form input[name="name"] {
+	width: 250px;
+	min-width: 250px;
+	max-width: 300px;
+}
+
+.checker-form .form-component {
+	float:left;
+}
+
+/* End of Favicon checker form */
+
+.social-checker-form > div {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#customizable-favicon-editor table {
+	text-align: center;
+}
+
+#customizable-favicon-editor table .feature {
+	text-align: left;
+}
+
+#customizable-favicon-editor table th {
+	text-align: center;
+}
+
+/* API doc */
+
+.api-demo-images {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.api-demo-images h2 {
+	font-size: 22px;
+}
+
+/* Social editor */
+
+.social-editor-technology-list {
+	text-align: center;
+	display: flex;
+}
+
+.social-editor-technology-list .technology {
+	margin-bottom: 1em;
+}
+
+.social-editor-technology-list > div {
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+}
+
+.social-editor-technology-list .panel {
+	margin-left: 2em;
+	margin-right: 2em;
+	flex: 1;
+}
+
+.social-editor-technology-list a {
+	color: inherit;
+}
+
+#files_location_sub_form .radio {
+	margin-bottom: 1.2em;
+}
+
+#files_location_sub_form .row {
+	margin-top: 15px;
+}
+
+#files_location_sub_form .self-hosting-panel {
+	background: none;
+}
+
+.ad-container {
+	margin-bottom: 36px;
+}
+
+.ad-container > ins {
+	width: 728px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ad_container {
+	display: none;
+}
+
+@media (min-width: 900px) {
+	#ad_container {
+		display: block;
+	}
+}
+
+#navigation-affix .nav {
+	width: 250px;
+}
+
+#navigation-affix .nav {
+	width: 250px;
+}
+
+#navigation-affix .nav.affix {
+	top: 100px;
+}
+
+#navigation-affix ul {
+	list-style-type: none;
+}
+
+.facebok_editor_features {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.facebok_editor_features li {
+  margin-bottom: 1em;
+}
+
+.facebok_editor_preview {
+  text-align: center;
+}
+
+.facebok_editor_preview_demo {
+  position: relative;
+  width: 518px;
+  height: 533px;
+  display: inline-block;
+}
+
+.facebok_editor_preview_demo .facebook-demo-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.facebok_editor_preview_demo .facebook-demo-logo {
+  position: absolute;
+  left: 21px;
+  bottom: 192px;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.facebok_editor_preview_demo .facebook-demo-overlay {
+  position: absolute;
+  left: 1px;
+  bottom: 172px;
+  width: 516px;
+  height: 271px;
+}
+
+.resoc-promo-alert h3 {
+  margin-bottom: 0;
+}
+
+#monitorboy ul {
+  padding-left: 0px;
+}
+
+#monitorboy li {
+  list-style-type: none;
+}
+
+#monitorboy li .glyphicon {
+  margin-right: 10px;
+}

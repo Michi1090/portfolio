@@ -1,0 +1,22 @@
+.tech_list {
+  text-align: center;
+}
+
+.tech_list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.7em;
+}
+
+.tech_list ul li {
+  display: inline;
+}
+
+.tech_list ul li:not(:last-child) {
+  margin-right: 1em;
+}
+
+.tech_list h2 {
+  font-size: 1.4em;
+  margin-top: 0;
+}
