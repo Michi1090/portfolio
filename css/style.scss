@@ -183,7 +183,7 @@ header {
   margin-top: 200px;
 
   li {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin: 15px 10px;
   }
 }
@@ -425,6 +425,19 @@ label {
 .complete .btn {
   margin-top: 50px;
 }
+
+
+/* トップページへ戻るボタン
+------------------------------------------------------------------------------------ */
+#page_top {
+  width: 40px;
+  position: fixed;
+  right: 2%;
+  bottom: -50px;
+  font-size:30px;
+  text-align: center;
+}
+
 
 /* フッター
 ------------------------------------------------------------------------------------- */

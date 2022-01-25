@@ -92,12 +92,12 @@
     <section id="works">
       <h2>Works</h2>
       <article class="work1">
-        <a class="link" href="#home" target="_blank">
+        <a class="link" href="#home">
           <h3>◆Michi's Portfolio(当サイト)</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
-            <a href="#home" target="_blank">
+            <a href="#home">
               <img class="img-link" src="images/work-1.jpg">
             </a>
           </div>
@@ -107,7 +107,7 @@
               <li>使用技術 : <br>HTML/CSS/Sass/JavaScript/jQuery/PHP</li>
               <li>主な機能 : <br>自己紹介ページ、メインビジュアルのスライドショー、お問い合わせフォーム、レスポンシブデザイン対応</li>
               <li>
-                ソースコード(GitHub) : <br><a class="link" href="https://github.com/Michi1090/portfolio">https://github.com/Michi1090/portfolio</a>
+                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/portfolio">https://github.com/Michi1090/portfolio</a>
               </li>
             </ul>
         </div>
@@ -133,7 +133,7 @@
               <li>使用技術 : <br>hoge/hoge/hoge/hoge/hoge/hoge</li>
               <li>主な機能 : <br>hogehoge、hogehoge、hogehoge、hogehoe</li>
               <li>
-                ソースコード(GitHub) : <br><a class="link" href="https://github.com/Michi1090/app1">https://github.com/Michi1090/app1</a>
+                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/app1">https://github.com/Michi1090/app1</a>
               </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@
               <li>使用技術 : <br>hoge/hoge/hoge/hoge/hoge/hoge</li>
               <li>主な機能 : <br>hogehoge、hogehoge、hogehoge、hogehoe</li>
               <li>
-                ソースコード(GitHub) : <br><a class="link" href="https://github.com/Michi1090/app2">https://github.com/Michi1090/app2</a>
+                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/app2">https://github.com/Michi1090/app2</a>
               </li>
             </ul>
         </div>
@@ -184,11 +184,11 @@
         <h3>◆Activities</h3>
         <div class="act-item">
           <p class="act-date">2022.01.23</p>
-          <p class="act-info"><a class="link" href="#" target="_blank">「フレームワークを使わずにお問い合わせフォームを作成する①」</a> を投稿しました</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/16ccfb136012cd0410b8" target="_blank">「WSL2(Ubuntu)でPHP + Apache環境を構築する②」</a> を投稿しました</p>
         </div>
         <div class="act-item">
           <p class="act-date">2022.01.16</p>
-          <p class="act-info"><a class="link" href="#" target="_blank">「WSL2でLinux環境(Ubuntu)を構築する」</a> を投稿しました</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/2ff58970fd95c0b366c7" target="_blank">「WSL2(Ubuntu)でPHP + Apache環境を構築する①」</a> を投稿しました</p>
         </div>
         <div class="act-item act-bottom">
           <p class="act-date">2022.01.09</p>
@@ -233,6 +233,8 @@
       <li><a class="sns-link" href="https://www.linkedin.com/in/michinobu-masayama/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
     </ul>
   </nav><!-- /.sns-menu-bottom -->
+
+  <nav id="page_top"><a class="sns-link" href="#home"><i class="fas fa-chevron-circle-up"></i></a></nav>
 
   <footer>
     <p>&copy; 2021 Michinobu MASAYAMA</p>
