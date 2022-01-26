@@ -39,27 +39,25 @@ $(function () {
 	});
 
 
-	/* トップへ戻るボタン
+	/* トップページへ戻るボタン
 ----------------------------------------------------------------------------------------------------------------------*/
-	$(function () {
-		let appear = false;
-		const pageTop = $('#page_top');
+	let appear = false;
+	const pageTop = $('#page-top-btn');
 
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 200) {  //100pxスクロールしたら
-				if (appear == false) {
-					appear = true;
-					//下から50pxの位置に0.3秒かけて現れる
-					pageTop.stop().animate({ 'bottom': '50px' }, 300);
-				}
-			} else {
-				if (appear == true) {
-					appear = false;
-					//下から-50pxの位置に0.3秒かけて隠れる
-					pageTop.stop().animate({ 'bottom': '-50px' }, 300);
-				}
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {  //500pxスクロールしたら
+			if (appear == false) {
+				appear = true;
+				//下から50pxの位置に0.3秒かけて現れる
+				pageTop.stop().animate({ 'bottom': '50px' }, 300);
 			}
-		});
+		} else {
+			if (appear == true) {
+				appear = false;
+				//下から-50pxの位置に0.3秒かけて隠れる
+				pageTop.stop().animate({ 'bottom': '-50px' }, 300);
+			}
+		}
 	});
 
 
