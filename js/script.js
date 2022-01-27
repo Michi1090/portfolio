@@ -1,79 +1,76 @@
 'use strict';
 
 /* jQuery */
-$(function () {
 
-	/* メインビジュアルのスライドショー
-	--------------------------------------------------------------------------------------------------------------*/
-	$('.slider').slick({
-		fade: true,//切り替えをフェードで行う。初期値はfalse。
-		autoplay: true,//自動的に動き出すか。初期値はfalse。
-		autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
-		speed: 1000,//スライドの動きのスピード。初期値は300。
-		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-		slidesToShow: 1,//1回で表示させるスライド数
-		slidesToScroll: 1,//1回のスクロールでスライドする数
-		arrows: true,//左右の矢印あり
-		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-		dots: true,//下部ドットナビゲーションの表示
-		pauseOnFocus: false,//フォーカスで一時停止を無効
-		pauseOnHover: false,//マウスホバーで一時停止を無効
-		pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
-	});
+/* メインビジュアルのスライドショー
+--------------------------------------------------------------------------------------------------------------*/
+$('.slider').slick({
+	fade: true,//切り替えをフェードで行う。初期値はfalse。
+	autoplay: true,//自動的に動き出すか。初期値はfalse。
+	autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
+	speed: 1000,//スライドの動きのスピード。初期値は300。
+	infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+	slidesToShow: 1,//1回で表示させるスライド数
+	slidesToScroll: 1,//1回のスクロールでスライドする数
+	arrows: true,//左右の矢印あり
+	prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+	nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+	dots: true,//下部ドットナビゲーションの表示
+	pauseOnFocus: false,//フォーカスで一時停止を無効
+	pauseOnHover: false,//マウスホバーで一時停止を無効
+	pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+});
 
-	//スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
-	$('.slider').on('touchmove', function (event, slick, currentSlide, nextSlide) {
-		$('.slider').slick('slickPlay');
-	});
+//スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
+$('.slider').on('touchmove', function (event, slick, currentSlide, nextSlide) {
+	$('.slider').slick('slickPlay');
+});
 
 
-	/* スクロールアニメーション
+/* スクロールアニメーション
 ----------------------------------------------------------------------------------------------------------------------*/
-	$('a[href*="#"]').click(function () {
-		const elmHash = $(this).attr('href');
-		const pos = $(elmHash).offset().top;
+$('a[href*="#"]').click(function () {
+	const elmHash = $(this).attr('href');
+	const pos = $(elmHash).offset().top;
 
-		$('body,html').animate({ scrollTop: pos }, 500); //500の数値が大きくなるほどゆっくりスクロール
-		return false; //バブリング（親要素への伝播）防止
-	});
+	$('body,html').animate({ scrollTop: pos }, 500); //500の数値が大きくなるほどゆっくりスクロール
+	return false; //バブリング（親要素への伝播）防止
+});
 
 
-	/* トップページへ戻るボタン
+/* トップページへ戻るボタン
 ----------------------------------------------------------------------------------------------------------------------*/
-	let appear = false;
-	const pageTop = $('#page-top-btn');
+let appear = false;
+const pageTop = $('#page-top');
 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 500) {  //500pxスクロールしたら
-			if (appear == false) {
-				appear = true;
-				//下から50pxの位置に0.3秒かけて現れる
-				pageTop.stop().animate({ 'bottom': '50px' }, 300);
-			}
-		} else {
-			if (appear == true) {
-				appear = false;
-				//下から-50pxの位置に0.3秒かけて隠れる
-				pageTop.stop().animate({ 'bottom': '-50px' }, 300);
-			}
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 500) {  //500pxスクロールしたら
+		if (appear == false) {
+			appear = true;
+			//下から50pxの位置に0.3秒かけて現れる
+			pageTop.stop().animate({ 'bottom': '50px' }, 300);
 		}
-	});
-
-
-	/* モバイル版表示時、headerのクラス'.wrapper'を削除
-	------------------------------------------------------------------------------------------------------------------- */
-	$(window).on('load resize', function () {
-		const width = $(window).outerWidth();
-		const breakPoint = 768;
-
-		if (width <= breakPoint) {
-			$('header').removeClass('wrapper');
-		} else {
-			$('header').addClass('wrapper');
+	} else {
+		if (appear == true) {
+			appear = false;
+			//下から-50pxの位置に0.3秒かけて隠れる
+			pageTop.stop().animate({ 'bottom': '-50px' }, 300);
 		}
-	});
+	}
+});
 
+
+/* モバイル版表示時、headerのクラス'.wrapper'を削除
+------------------------------------------------------------------------------------------------------------------- */
+$(window).on('load resize', function () {
+	const width = $(window).outerWidth();
+	const breakPoint = 768;
+
+	if (width <= breakPoint) {
+		$('header').removeClass('wrapper');
+	} else {
+		$('header').addClass('wrapper');
+	}
 });
 
 
