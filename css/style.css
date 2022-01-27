@@ -401,10 +401,58 @@ label {
   text-align: center;
   position: fixed;
   right: 2%;
-  bottom: -50px;
+  bottom: 10px;
   z-index: 2;
+  transform: translateY(100px);
+  /* はじめは非表示 */
 }
 
+/* 上に上がる動き */
+#page-top.UpMove {
+  -webkit-animation: UpAnime 0.5s forwards;
+          animation: UpAnime 0.5s forwards;
+}
+
+@-webkit-keyframes UpAnime {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* 下に下がる動き */
+#page-top.DownMove {
+  -webkit-animation: DownAnime 0.5s forwards;
+          animation: DownAnime 0.5s forwards;
+}
+
+@-webkit-keyframes DownAnime {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
 /* フッター
 ------------------------------------------------------------------------------------- */
 footer {

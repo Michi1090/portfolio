@@ -435,10 +435,39 @@ label {
   text-align: center;
   position: fixed;
   right: 2%;
-  bottom: -50px;
+  bottom: 10px;
   z-index: 2;
+	transform: translateY(100px); /* はじめは非表示 */
 }
 
+/* 上に上がる動き */
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+	  transform: translateY(100px);
+  }
+  to {
+	  transform: translateY(0);
+  }
+}
+
+/* 下に下がる動き */
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime{
+  from {
+	  transform: translateY(0);
+  }
+  to {
+	  transform: translateY(100px);
+  }
+}
 
 /* フッター
 ------------------------------------------------------------------------------------- */

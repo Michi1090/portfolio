@@ -234,11 +234,10 @@
     </ul>
   </nav><!-- /.sns-menu-bottom -->
 
-  <nav id="page-top">
-    <a class="sns-link" href="#home"><i class="fas fa-chevron-circle-up"></i></a>
-  </nav><!-- /#page-top -->
-
   <footer>
+    <nav id="page-top">
+      <a class="sns-link" href="#home"><i class="fas fa-chevron-circle-up"></i></a>
+    </nav><!-- /#page-top -->
     <p>&copy; 2021 Michinobu MASAYAMA</p>
   </footer><!-- /footer -->
 

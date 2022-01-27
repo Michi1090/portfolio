@@ -40,23 +40,44 @@ $('a[href*="#"]').click(function () {
 
 /* トップページへ戻るボタン
 ----------------------------------------------------------------------------------------------------------------------*/
-let appear = false;
-const pageTop = $('#page-top');
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 500) {  //500pxスクロールしたら
-		if (appear == false) {
-			appear = true;
-			//下から50pxの位置に0.3秒かけて現れる
-			pageTop.stop().animate({ 'bottom': '50px' }, 300);
-		}
+//スクロールした際のボタンの動作
+function PageTopAnime() {
+	//<main>までスクロールしたらボタンが出現
+	const scroll = $(window).scrollTop();
+	const mainPos = Math.round($('main').offset().top);
+
+	if (scroll >= mainPos) {
+		$('#page-top').removeClass('DownMove');
+		$('#page-top').addClass('UpMove');
 	} else {
-		if (appear == true) {
-			appear = false;
-			//下から-50pxの位置に0.3秒かけて隠れる
-			pageTop.stop().animate({ 'bottom': '-50px' }, 300);
+		if ($('#page-top').hasClass('UpMove')) {
+			$('#page-top').removeClass('UpMove');
+			$('#page-top').addClass('DownMove');
 		}
 	}
+
+	//<footer>手前でボタンの動作が止まる
+	const windowHight = window.innerHeight;
+	const footerPos = $('footer').offset().top;
+	if (scroll + windowHight >= (footerPos + 10)) {
+		const pos = (scroll + windowHight) - footerPos + 10
+		$('#page-top').css('bottom', pos);
+	} else {
+		if ($('#page-top').hasClass('UpMove')) {
+			$('#page-top').css('bottom', '10px');
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();
 });
 
 
@@ -79,7 +100,7 @@ $(window).on('load resize', function () {
 
 /* お問い合わせフォームのバリデーション
 --------------------------------------------------------------------------------------------------------------------- */
-/* エラーメッセージの表示機能 */
+// エラーメッセージの表示機能
 function errorElement(form, msg) {
 	form.className = "error-form"; //入力欄のクラス名を"error-from"に
 	const newElement = document.createElement("div"); //新たにdiv要素を作成
@@ -89,7 +110,7 @@ function errorElement(form, msg) {
 	form.parentNode.insertBefore(newElement, form.nextSibling); //エラーメッセージをfromの後ろに表示
 }
 
-/* エラーメッセージのクリア機能 */
+// エラーメッセージのクリア機能
 function removeElementsByClass(className) {
 	const elements = document.getElementsByClassName(className); //該当するクラス名を持つ要素を取得
 	while (elements.length > 0) { //配列elementsの要素が1つ以上ある場合
@@ -104,7 +125,7 @@ function removeClass(className) {
 	}
 }
 
-/* バリデーション（日本語） */
+// バリデーション
 function validate() {
 	let flag = true; //フラグのデフォルトはtrue
 	removeElementsByClass("error"); //エラーメッセージの削除
