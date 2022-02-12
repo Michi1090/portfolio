@@ -54,10 +54,10 @@ if (isset($_POST["submit"])) { // 送信ボタンが押されたら
   // 受信用のメールアドレスを変数myEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
   $myEmail = "hoge@gmail.com";
 
-  // メッセージ送信者へ返信する
+  // フォーム入力者へメールを送信する
   mb_send_mail($email, $subject, htmlspecialchars_decode($body), $header);
 
-  // 自分のメールアドレスへ内容を送信する
+  // サイト管理者へメールを送信する
   mb_send_mail($myEmail, $subject, htmlspecialchars_decode($body), $header);
 
   //送信完了画面へ移動する

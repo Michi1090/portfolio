@@ -102,25 +102,25 @@ $(window).on('load resize', function () {
 --------------------------------------------------------------------------------------------------------------------- */
 // エラーメッセージの表示機能
 function errorElement(form, msg) {
-	form.className = "error-form"; //入力欄のクラス名を"error-from"に
+	form.className = "error-form"; //入力欄のクラス名を"error-form"に
 	const newElement = document.createElement("div"); //新たにdiv要素を作成
 	newElement.className = "error"; //div要素のクラス名を"errorに
 	const newText = document.createTextNode(msg); //エラーメッセージのテキストを代入
 	newElement.appendChild(newText); //div要素の中にエラーメッセージを挿入
-	form.parentNode.insertBefore(newElement, form.nextSibling); //エラーメッセージをfromの後ろに表示
+	form.parentNode.insertBefore(newElement, form.nextSibling); //エラーメッセージをformの後ろに表示
 }
 
 // エラーメッセージのクリア機能
 function removeElementsByClass(className) {
 	const elements = document.getElementsByClassName(className); //該当するクラス名を持つ要素を取得
-	while (elements.length > 0) { //配列elementsの要素が1つ以上ある場合
+	while (elements.length > 0) { //配列elementsの要素が1つ以上ある限り
 		elements[0].parentNode.removeChild(elements[0]); //先頭の要素を削除する
 	}
 }
 
 function removeClass(className) {
 	const elements = document.getElementsByClassName(className); //該当するクラス名を持つ要素を取得
-	while (elements.length > 0) { //配列elementsの要素が1つ以上ある場合
+	while (elements.length > 0) { //配列elementsの要素が1つ以上ある限り
 		elements[0].className = ""; //先頭のクラス名を削除する
 	}
 }
