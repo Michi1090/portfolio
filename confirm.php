@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // //フォームのボタンが押されたら、送信されたデータをサニタイズして各変数に格納
-  $name = htmlspecialchars($_POST["name"]);
-  $email = htmlspecialchars($_POST["email"]);
-  $message = htmlspecialchars($_POST["message"]);
+  $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
+  $email = htmlspecialchars($_POST["email"], ENT_QUOTES, 'UTF-8');
+  $message = htmlspecialchars($_POST["message"], ENT_QUOTES, 'UTF-8');
 } else {
   //フォームボタン以外からこのページにアクセスした場合（URL直接入力など）、トップページに戻る
   header(('location: index.php'));
@@ -55,10 +55,10 @@ if (isset($_POST["submit"])) { // 送信ボタンが押されたら
   $myEmail = "hoge@gmail.com";
 
   // フォーム入力者へメールを送信する
-  mb_send_mail($email, $subject, htmlspecialchars_decode($body), $header);
+  mb_send_mail($email, $subject, htmlspecialchars_decode($body, ENT_QUOTES), $header);
 
   // サイト管理者へメールを送信する
-  mb_send_mail($myEmail, $subject, htmlspecialchars_decode($body), $header);
+  mb_send_mail($myEmail, $subject, htmlspecialchars_decode($body, ENT_QUOTES), $header);
 
   //送信完了画面へ移動する
   header(('location: complete.php'));

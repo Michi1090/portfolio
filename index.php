@@ -76,7 +76,7 @@
         <h3>◆Skills</h3>
         <div class="programming">
           <h4>プログラミング</h4>
-          <p>HTML, CSS, Sass, JavaScript, jQuery, PHP, Laravel, MySQL, Linux, Git, VBA</p>
+          <p>HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, PHP, Laravel, MySQL, Linux, Git, Docker, AWS</p>
         </div>
         <div class="experience">
           <h4>前職までの経験</h4>
