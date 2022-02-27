@@ -76,7 +76,7 @@
         <h3>◆Skills</h3>
         <div class="programming">
           <h4>プログラミング</h4>
-          <p>HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, PHP, Laravel, MySQL, Linux, Git, Docker, AWS</p>
+          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6.0, MariaDB10.4, Linux, Git/GitHub, Docker, AWS</p>
         </div>
         <div class="experience">
           <h4>前職までの経験</h4>
@@ -104,7 +104,7 @@
           <li class="work-info">
             <ul>
               <li>制作時期 : 2021年12月中旬～下旬</li>
-              <li>使用技術 : <br>HTML/CSS/Sass/JavaScript/jQuery/PHP</li>
+              <li>使用技術 : <br>HTML, CSS, Sass, JavaScript/jQuery, PHP</li>
               <li>主な機能 : <br>自己紹介ページ、メインビジュアルのスライドショー、お問い合わせフォーム、レスポンシブデザイン対応</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/portfolio">https://github.com/Michi1090/portfolio</a>
@@ -119,7 +119,7 @@
 
       <article class="work2">
         <a class="link" href="#" target="_blank">
-          <h3>◆自作アプリ①(準備中)</h3>
+          <h3>◆筋トレログアプリ 「My Workout」(制作中)</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
@@ -129,17 +129,17 @@
           </div>
           <li class="work-info">
             <ul>
-              <li>制作時期 : 2022年**月中旬～下旬</li>
-              <li>使用技術 : <br>hoge/hoge/hoge/hoge/hoge/hoge</li>
-              <li>主な機能 : <br>hogehoge、hogehoge、hogehoge、hogehoe</li>
+              <li>制作時期 : 2022年2月中旬～3月初旬</li>
+              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MariaDB</li>
+              <li>主な機能 : <br>ログイン・ログアウト機能、ユーザーのCRUD機能、筋トレログのCRUD機能</li>
               <li>
-                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/app1">https://github.com/Michi1090/app1</a>
+                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/workout">https://github.com/Michi1090/workout</a>
               </li>
             </ul>
         </div>
         </div>
         <div class="work-description">
-          <p>現在制作中</p>
+          <p>毎日の筋トレの成果を記録できるアプリです。ジムで使用することを念頭に置いているため、UIはスマートホン用に特化しています。PHPネイティブとSQLへの理解を深めるため、あえてフレームワークは一切使用せずにフルスクラッチで開発しました。フルスクラッチ開発ながら、セキュリティ面もしっかり考慮して実装しています。</p>
         </div>
       </article><!-- /.work2 -->
 
@@ -183,16 +183,24 @@
       <article class="activities">
         <h3>◆Activities</h3>
         <div class="act-item">
-          <p class="act-date">2022.01.23</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/16ccfb136012cd0410b8" target="_blank">「WSL2(Ubuntu)でPHP + Apache環境を構築する②」</a> を投稿しました</p>
+          <p class="act-date">2022.02.27</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/fcd6ad529823c7024e55" target="_blank">「プログラミング初学者が学習前に知っておきたかったネットワーク専門用語5選」</a> を投稿しました</p>
         </div>
         <div class="act-item">
-          <p class="act-date">2022.01.16</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/2ff58970fd95c0b366c7" target="_blank">「WSL2(Ubuntu)でPHP + Apache環境を構築する①」</a> を投稿しました</p>
+          <p class="act-date">2022.02.20</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/888f3e4784186b7e0ab3" target="_blank">【コラム】未経験からエンジニア転職を目指す人たちの正しい情報の取り方とは？</a> を投稿しました</p>
+        </div>
+        <div class="act-item">
+          <p class="act-date">2022.02.13</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/150f4cd178155072f44c" target="_blank">PHPでお問い合わせフォームを作成する②</a> を投稿しました</p>
+        </div>
+        <div class="act-item">
+          <p class="act-date">2022.02.06</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/a575375e3db3fc6a2a90" target="_blank">PHPでお問い合わせフォームを作成する①</a> を投稿しました</p>
         </div>
         <div class="act-item act-bottom">
-          <p class="act-date">2022.01.09</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/a4b69e40a45ac32a2ebb" target="_blank">「XAMPPでYahoo!メールからメールを送信する」</a> を投稿しました</p>
+          <p class="act-date">2022.01.30</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/094a13cad3133e97d202" target="_blank">WSL2(Ubuntu)でGitHubを使用する</a> を投稿しました</p>
         </div>
       </article><!-- /.activities -->
 
