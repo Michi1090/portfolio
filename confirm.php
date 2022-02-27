@@ -1,18 +1,19 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // //フォームのボタンが押されたら、送信されたデータをサニタイズして各変数に格納
-  $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
-  $email = htmlspecialchars($_POST["email"], ENT_QUOTES, 'UTF-8');
-  $message = htmlspecialchars($_POST["message"], ENT_QUOTES, 'UTF-8');
+  // //フォームのボタンが押されたら、POSTされたデータを各変数に格納
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
 } else {
   //フォームボタン以外からこのページにアクセスした場合（URL直接入力など）、トップページに戻る
-  header(('location: index.php'));
+  header(("location: index.php"));
   exit;
 }
 
 /* 以下、メール送信の処理
 ---------------------------------------------------------------------------------------------------------------- */
-if (isset($_POST["submit"])) { // 送信ボタンが押されたら
+// 送信ボタンが押されたら
+if (isset($_POST["submit"])) {
   // メールの言語設定
   mb_language("ja");
   mb_internal_encoding("UTF-8");
@@ -44,6 +45,8 @@ if (isset($_POST["submit"])) { // 送信ボタンが押されたら
 
   // 送信元のメールアドレスを変数fromEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
   $fromEmail = "hoge@yahoo.co.jp";
+  // 本番用
+  // $fromEmail = "@yahoo.co.jp";
 
   // 送信元の名前を変数fromNameに格納
   $fromName = "Michi's Portfolio";
@@ -53,18 +56,27 @@ if (isset($_POST["submit"])) { // 送信ボタンが押されたら
 
   // 受信用のメールアドレスを変数myEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
   $myEmail = "hoge@gmail.com";
+  // 本番用
+  // $myEmail = "@gmail.com";
 
   // フォーム入力者へメールを送信する
-  mb_send_mail($email, $subject, htmlspecialchars_decode($body, ENT_QUOTES), $header);
+  mb_send_mail($email, $subject, $body, $header);
 
   // サイト管理者へメールを送信する
-  mb_send_mail($myEmail, $subject, htmlspecialchars_decode($body, ENT_QUOTES), $header);
+  mb_send_mail($myEmail, $subject, $body, $header);
 
   //送信完了画面へ移動する
-  header(('location: complete.php'));
+  header(("location: complete.php"));
   exit;
 }
+
+// HTML出力前のエスケープ処理
+function escape($str)
+{
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
 ?>
+
 
 <?php require_once 'head.php' ?>
 
@@ -77,17 +89,17 @@ if (isset($_POST["submit"])) { // 送信ボタンが押されたら
         <div class="contact_form">
           <label for="name">お名前</label>
           <input type="hidden" id="name" name="name" value="<?php echo $name; ?>">
-          <p><?php echo $name; ?></p>
+          <p><?php echo escape($name); ?></p>
         </div>
         <div class="contact_form">
           <label for="email">メールアドレス</label>
           <input type="hidden" id="email" name="email" value="<?php echo $email; ?>">
-          <p><?php echo $email; ?></p>
+          <p><?php echo escape($email); ?></p>
         </div>
         <div class="contact_form">
           <label for="message">メッセージ</label>
           <input type="hidden" id="message" name="message" value="<?php echo $message; ?>">
-          <p><?php echo nl2br($message); ?></p>
+          <p><?php echo nl2br(escape($message)); ?></p>
         </div>
         <input class="btn" type="button" value="修正" onclick="history.back(-1)">
         <input class="btn" type="submit" value="送信" name="submit"></input>
