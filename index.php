@@ -216,15 +216,15 @@
       <p>Michi's Portfolioをご覧いただきありがとうございます。</p>
       <p>本サイトへのご感想、お仕事のご紹介、その他お問い合わせなどにつきましては、下記のフォームよりお願いいたします。</p>
       <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-        <div class="contact_form">
+        <div class="contact-form">
           <label for="name">お名前</label>
           <input type="text" id="name" name="name">
         </div>
-        <div class="contact_form">
+        <div class="contact-form">
           <label for="email">メールアドレス</label>
           <input type="email" id="email" name="email">
         </div>
-        <div class="contact_form">
+        <div class="contact-form">
           <label for="message">メッセージ</label>
           <textarea id="message" name="message"></textarea>
         </div>

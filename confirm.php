@@ -1,79 +1,27 @@
 <?php
+
+// セッション開始
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // //フォームのボタンが押されたら、POSTされたデータを各変数に格納
+  //フォームのボタンが押されたら、POSTされたデータを各変数に格納
   $name = $_POST["name"];
   $email = $_POST["email"];
   $message = $_POST["message"];
+
+  // トークンの生成（CSRF対策）
+  $token = bin2hex(random_bytes(32));
+  $_SESSION['token'] = $token;
+
+  // HTML出力前のエスケープ処理
+  function escape($str)
+  {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+  }
 } else {
   //フォームボタン以外からこのページにアクセスした場合（URL直接入力など）、トップページに戻る
-  header(("location: index.php"));
+  header(("location: wrong_access.php"));
   exit;
-}
-
-/* 以下、メール送信の処理
----------------------------------------------------------------------------------------------------------------- */
-// 送信ボタンが押されたら
-if (isset($_POST["submit"])) {
-  // メールの言語設定
-  mb_language("ja");
-  mb_internal_encoding("UTF-8");
-
-  // 件名を変数subjectに格納
-  $subject = "［自動送信］メッセージ内容の確認";
-
-  // メール本文を変数bodyに格納
-  $body = <<< EOM
-  {$name}　様
-
-  メッセージありがとうございます。
-  以下の内容でメッセージを承りました。
-
-  ===================================================
-  < お名前 >
-  {$name}
-
-  < メールアドレス >
-  {$email}
-
-  < メッセージ >
-  {$message}
-  ===================================================
-
-  ※当メールは送信専用となっております。
-  　ご返信いただいても、お答えいたしかねますのでご了承ください。
-  EOM;
-
-  // 送信元のメールアドレスを変数fromEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
-  $fromEmail = "hoge@yahoo.co.jp";
-  // 本番用
-  // $fromEmail = "@yahoo.co.jp";
-
-  // 送信元の名前を変数fromNameに格納
-  $fromName = "Michi's Portfolio";
-
-  // ヘッダ情報を変数headerに格納する
-  $header = "From: " . mb_encode_mimeheader($fromName) . "<{$fromEmail}>";
-
-  // 受信用のメールアドレスを変数myEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
-  $myEmail = "hoge@gmail.com";
-  // 本番用
-  // $myEmail = "@gmail.com";
-
-  // フォーム入力者へメールを送信する
-  mb_send_mail($email, $subject, $body, $header);
-
-  // サイト管理者へメールを送信する
-  mb_send_mail($myEmail, $subject, $body, $header);
-
-  //送信完了画面へ移動する
-  header(("location: complete.php"));
-  exit;
-}
-
-// HTML出力前のエスケープ処理
-function escape($str)
-{
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 ?>
 
@@ -84,19 +32,20 @@ function escape($str)
   <main class="wrapper">
     <section id=contact class="confirm">
       <h2>Confirm</h2>
-      <p class="confirm_text">下記の内容でメッセージを送信します。よろしければ「送信」ボタンを押してください。</p>
-      <form action="confirm.php" method="post">
-        <div class="contact_form">
+      <p class="confirm-text">下記の内容でメッセージを送信します。よろしければ「送信」ボタンを押してください。</p>
+      <form action="complete.php" method="post">
+        <input type="hidden" name="token" value="<?= $token ?>">
+        <div class="contact-form">
           <label for="name">お名前</label>
           <input type="hidden" id="name" name="name" value="<?php echo $name; ?>">
           <p><?php echo escape($name); ?></p>
         </div>
-        <div class="contact_form">
+        <div class="contact-form">
           <label for="email">メールアドレス</label>
           <input type="hidden" id="email" name="email" value="<?php echo $email; ?>">
           <p><?php echo escape($email); ?></p>
         </div>
-        <div class="contact_form">
+        <div class="contact-form">
           <label for="message">メッセージ</label>
           <input type="hidden" id="message" name="message" value="<?php echo $message; ?>">
           <p><?php echo nl2br(escape($message)); ?></p>

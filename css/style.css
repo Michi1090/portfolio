@@ -335,7 +335,7 @@ form {
   margin-top: 50px;
 }
 
-.contact_form {
+.contact-form {
   padding-bottom: 10px;
 }
 
@@ -373,14 +373,14 @@ label {
 
 /* Contact（確認画面）
 ------------------------------------------------------------------------------------ */
-.confirm_text {
+.confirm-text {
   text-align: center;
 }
 
 .confirm label {
   font-weight: bold;
 }
-.confirm .contact_form {
+.confirm .contact-form {
   padding-bottom: 20px;
 }
 .confirm .btn {
@@ -391,6 +391,13 @@ label {
 ------------------------------------------------------------------------------------ */
 .complete .btn {
   margin-top: 50px;
+}
+
+/* Contact（不正アクセス画面）
+------------------------------------------------------------------------------------ */
+.wrong-access p {
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 /* トップページへ戻るボタン
