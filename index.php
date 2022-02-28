@@ -113,7 +113,7 @@
         </div>
         </div>
         <div class="work-description">
-          <p>筆者が人生で初めて製作したWebサイトです。シンプルで見やすいサイトを心がけながらも、要所でjQueryなどを使用し動きを付けました。お問い合わせフォームはフレームワークなどを使用せず、PHPとJavaScriptのみでメール送信機能とバリデーションを実装しています。</p>
+          <p>筆者が人生で初めて製作したWebサイトです。シンプルで見やすいサイトを心がけながらも、要所でjQueryを使用し動きを付けました。お問い合わせフォームはPHPで実装しており、実際に制作者へメールを送信いただけます。</p>
         </div>
       </article><!-- /.work1 -->
 
@@ -215,18 +215,18 @@
       <h2>Contact</h2>
       <p>Michi's Portfolioをご覧いただきありがとうございます。</p>
       <p>本サイトへのご感想、お仕事のご紹介、その他お問い合わせなどにつきましては、下記のフォームよりお願いいたします。</p>
-      <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+      <form action="confirm.php" method="post" name="form">
         <div class="contact-form">
           <label for="name">お名前</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
         </div>
         <div class="contact-form">
           <label for="email">メールアドレス</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="contact-form">
           <label for="message">メッセージ</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" minlength="50" required></textarea>
         </div>
         <input class="btn" type="submit" value="確認">
       </form>
