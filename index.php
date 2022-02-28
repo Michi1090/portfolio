@@ -104,7 +104,7 @@
           <li class="work-info">
             <ul>
               <li>制作時期 : 2021年12月中旬～下旬</li>
-              <li>使用技術 : <br>HTML, CSS, Sass, JavaScript/jQuery, PHP</li>
+              <li>使用技術 : <br>HTML, CSS, Sass, JavaScript, jQuery, PHP</li>
               <li>主な機能 : <br>自己紹介ページ、メインビジュアルのスライドショー、お問い合わせフォーム、レスポンシブデザイン対応</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/portfolio">https://github.com/Michi1090/portfolio</a>
