@@ -243,6 +243,9 @@ header {
   font-size: 1rem;
   text-decoration: underline;
 }
+.skills .programming p {
+  text-align: left;
+}
 
 /* Works
 ------------------------------------------------------------------------------- */
