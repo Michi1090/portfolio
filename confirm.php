@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <h2>Confirm</h2>
       <p class="confirm-text">下記の内容でメッセージを送信します。よろしければ「送信」ボタンを押してください。</p>
       <form action="complete.php" method="post">
-        <input type="hidden" name="token" value="<?= $token ?>">
+        <input type="hidden" name="token" value="<?php echo $token; ?>">
         <div class="contact-form">
           <label for="name">お名前</label>
           <input type="hidden" id="name" name="name" value="<?php echo $name; ?>">
