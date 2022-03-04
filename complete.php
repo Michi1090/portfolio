@@ -5,7 +5,7 @@ session_start();
 /* 以下、メール送信の処理
 ---------------------------------------------------------------------------------------------------------------- */
 // 送信ボタンが押されたら
-if (isset($_SESSION['token']) && $_POST['token'] === $_SESSION['token']) {
+if (!empty($_SESSION['token']) && $_POST['token'] === $_SESSION['token']) {
   // //フォームのボタンが押されたら、POSTされたデータを各変数に格納
   $name = $_POST["name"];
   $email = $_POST["email"];
