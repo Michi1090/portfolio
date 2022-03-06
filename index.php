@@ -215,18 +215,18 @@
       <h2>Contact</h2>
       <p>Michi's Portfolioをご覧いただきありがとうございます。</p>
       <p>本サイトへのご感想、お仕事のご紹介、その他お問い合わせなどにつきましては、下記のフォームよりお願いいたします。</p>
-      <form action="confirm.php" method="post" name="form">
+      <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
         <div class="contact-form">
           <label for="name">お名前</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name">
         </div>
         <div class="contact-form">
           <label for="email">メールアドレス</label>
-          <input type="email" id="email" name="email" required>
+          <input type="text" id="email" name="email">
         </div>
         <div class="contact-form">
           <label for="message">メッセージ</label>
-          <textarea id="message" name="message" minlength="50" required></textarea>
+          <textarea id="message" name="message"></textarea>
         </div>
         <input class="btn" type="submit" value="確認">
       </form>
