@@ -161,6 +161,7 @@ function validate() {
 		errorElement(document.form.message, "※メッセージが入力されていません");
 		flag = false;
 	} else if (document.form.message.value.length < 50) {
+		// 50文字以上入力されているかチェック
 		errorElement(document.form.message, "※メッセージは50文字以上で入力してください");
 		flag = false;
 	}

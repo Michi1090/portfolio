@@ -63,7 +63,7 @@ if (!empty($_SESSION['token']) && $_POST['token'] === $_SESSION['token']) {
   mb_send_mail($myEmail, $subject, $body, $header);
 } else {
   // トークンが一致しない場合、不正アクセス画面へ移動する
-  header(("location:  wrong_access.php"));
+  header(("location: alert.php"));
   exit;
 }
 ?>

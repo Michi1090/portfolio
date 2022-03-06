@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 } else {
   //フォームボタン以外からこのページにアクセスした場合（URL直接入力など）、トップページに戻る
-  header(("location: wrong_access.php"));
+  header(("location: alert.php"));
   exit;
 }
 ?>
