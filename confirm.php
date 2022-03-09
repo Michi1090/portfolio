@@ -34,20 +34,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <h2>Confirm</h2>
       <p class="confirm-text">下記の内容でメッセージを送信します。よろしければ「送信」ボタンを押してください。</p>
       <form action="complete.php" method="post">
-        <input type="hidden" name="token" value="<?php echo $token; ?>">
+        <input type="hidden" name="token" value="<?php echo escape($token); ?>">
         <div class="contact-form">
           <label for="name">お名前</label>
-          <input type="hidden" id="name" name="name" value="<?php echo $name; ?>">
+          <input type="hidden" id="name" name="name" value="<?php echo escape($name); ?>">
           <p><?php echo escape($name); ?></p>
         </div>
         <div class="contact-form">
           <label for="email">メールアドレス</label>
-          <input type="hidden" id="email" name="email" value="<?php echo $email; ?>">
+          <input type="hidden" id="email" name="email" value="<?php echo escape($email); ?>">
           <p><?php echo escape($email); ?></p>
         </div>
         <div class="contact-form">
           <label for="message">メッセージ</label>
-          <input type="hidden" id="message" name="message" value="<?php echo $message; ?>">
+          <input type="hidden" id="message" name="message" value="<?php echo escape($message); ?>">
           <p><?php echo nl2br(escape($message)); ?></p>
         </div>
         <input class="btn" type="button" value="修正" onclick="history.back(-1)">
