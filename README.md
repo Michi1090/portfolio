@@ -37,7 +37,8 @@ HTML, CSS, Sass, JavaScript, jQuery, PHP
 - [x]  送信完了後のブラウザバック禁止
 
 ## Qiita記事
-制作にあたって技術的に苦労した点などをQiita記事で公開しております。ご覧いただければ幸いです。
+制作にあたって技術的に苦労した点、学んだ点などをQiita記事で分かりやすく解説しています。  
+ご覧いただければ幸いです。
 
 ### XAMPPでYahoo!メールからメールを送信する  
 https://qiita.com/Michi1090/items/a4b69e40a45ac32a2ebb
