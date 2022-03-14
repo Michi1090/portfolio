@@ -7,7 +7,7 @@
 
 ## 公開URL
 https://www.hogehoge.com  
-※Google Chrome推奨
+※Google Chrome, Safari for iPhone推奨
 
 ## 制作時期
 2021年12月中旬～下旬
@@ -39,5 +39,11 @@ HTML, CSS, Sass, JavaScript, jQuery, PHP
 ## Qiita記事
 制作にあたって技術的に苦労した点などをQiita記事で公開しております。ご覧いただければ幸いです。
 
-■XAMPPでYahoo!メールからメールを送信する  
+### XAMPPでYahoo!メールからメールを送信する  
 https://qiita.com/Michi1090/items/a4b69e40a45ac32a2ebb
+
+### PHPでお問い合わせフォームを作成する①
+https://qiita.com/Michi1090/items/a575375e3db3fc6a2a90
+
+### PHPでお問い合わせフォームを作成する②
+https://qiita.com/Michi1090/items/150f4cd178155072f44c
