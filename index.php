@@ -76,7 +76,7 @@
         <h3>◆Skills</h3>
         <div class="programming">
           <h4>プログラミング</h4>
-          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6.0, MariaDB10.4, Linux, Git/GitHub, Docker, AWS</p>
+          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6.0, MySQL8.0/MariaDB10.4, Linux, Git/GitHub, Docker, AWS</p>
         </div>
         <div class="experience">
           <h4>前職までの経験</h4>
@@ -118,20 +118,20 @@
       </article><!-- /.work1 -->
 
       <article class="work2">
-        <a class="link" href="#" target="_blank">
-          <h3>◆筋トレログアプリ 「My Workout」(制作中)</h3>
+        <a class="link" href="https://pure-garden-14346.herokuapp.com/" target="_blank">
+          <h3>◆筋トレログアプリ 『My Workout』</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
-            <a href="#" target="_blank">
-              <img class="img-link" src="images/work.jpeg">
+            <a href="https://pure-garden-14346.herokuapp.com/" target="_blank">
+              <img class="img-link" src="images/work-2.jpg">
             </a>
           </div>
           <li class="work-info">
             <ul>
-              <li>制作時期 : 2022年2月中旬～3月初旬</li>
-              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MariaDB</li>
-              <li>主な機能 : <br>ログイン・ログアウト機能、ユーザーのCRUD機能、筋トレログのCRUD機能</li>
+              <li>制作時期 : 2022年2月中旬～3月中旬</li>
+              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MySQL/MariaDB</li>
+              <li>主な機能 : <br>ログイン・ログアウト機能、ユーザーのCRUD機能、トレーニングログのCRUD・検索機能、ページネーション</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/workout">https://github.com/Michi1090/workout</a>
               </li>
@@ -139,7 +139,7 @@
         </div>
         </div>
         <div class="work-description">
-          <p>毎日の筋トレの成果を記録できるアプリです。ジムで使用することを念頭に置いているため、UIはスマートホン用に特化しています。PHPネイティブとSQLへの理解を深めるため、あえてフレームワークは一切使用せずにフルスクラッチで開発しました。フルスクラッチ開発ながら、セキュリティ面もしっかり考慮して実装しています。</p>
+          <p>毎日の筋トレの成果を記録できるアプリです。ジムで使用することを念頭に置いているため、UIはスマートホン用に特化しています。ネイティブPHPとSQLへの理解を深めるため、バックエンドの処理はあえてフレームワークを一切使用せずにフルスクラッチで開発しました。フルスクラッチ開発ながらも、セキュリティ面もしっかり対策しています。</p>
         </div>
       </article><!-- /.work2 -->
 
