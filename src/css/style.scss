@@ -250,17 +250,32 @@ header {
 /* Skills */
 .skills{
 
-  .programming, .experience {
-    margin-bottom: 5px;
-  }
-
   h4 {
     font-size: 1rem;
+    margin-bottom: 5px;
     text-decoration: underline;
   }
 
-  .programming p {
-    text-align: left;
+  .programming {
+    margin-bottom: 20px;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .experience {
+    margin-bottom: 20px;
+
+    .paragraph {
+      margin-bottom: 5px;
+    }
+
+    li {
+      list-style: upper-roman inside;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
   }
 }
 

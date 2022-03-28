@@ -75,12 +75,19 @@
       <article class="skills">
         <h3>◆Skills</h3>
         <div class="programming">
-          <h4>プログラミング</h4>
-          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6.0, MySQL8.0/MariaDB10.4, Linux, Git/GitHub, Docker, AWS</p>
+          <h4>IT・プログラミング</h4>
+          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6, MySQL5.7/MariaDB10.3, Linux(Ubuntu), Git/GitHub, Docker</p>
         </div>
         <div class="experience">
           <h4>前職までの経験</h4>
-          <p>対人折衝能力、複数部門間の業務調整能力、企画・計画立案力、進捗管理能力、チームリーダー経験、新規プロジェクトへのアサイン経験</p>
+          <p class="paragraph">前職・前々職では、一貫して製造業で生産管理業務に従事していました。生産管理とは生産・販売・在庫・物流を一手に管理するサプライチェーンの司令塔であり、工場の調整役でもあります。主な業務としては、</p>
+          <ol class="paragraph">
+            <li>お客様からの受注を基に生産計画を策定</li>
+            <li>関係各部門に根回しをして周囲のコンセンサスを得る</li>
+            <li>策定した計画に対し遅延がないよう日々管理する</li>
+            <li>トラブルが発生した場合は速やかに対応策を検討し、対処する</li>
+          </ol>
+          <p>といったようなものがあります。企画立案力、管理能力だけでなく、対人折衝能力やステークホルダー間の調整能力も求められる仕事です。また、チームリーダーや新規プロジェクトの立ち上げ経験なども持ち合わせております。</p>
         </div>
         <div class="others">
           <h4>その他</h4>
@@ -92,13 +99,13 @@
     <section id="works">
       <h2>Works</h2>
       <article class="work1">
-        <a class="link" href="#home">
+        <a class="link" href="https://michi-programming.com" target="_blank">
           <h3>◆Michi's Portfolio(当サイト)</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
-            <a href="#home">
-              <img class="img-link" src="images/work-1.jpg">
+            <a href="https://michi-programming.com" target="_blank">
+              <img class=" img-link" src="images/work-1.jpg">
             </a>
           </div>
           <li class="work-info">
@@ -131,7 +138,7 @@
             <ul>
               <li>制作時期 : 2022年2月中旬～3月中旬</li>
               <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MySQL/MariaDB</li>
-              <li>主な機能 : <br>ログイン・ログアウト機能、ユーザーのCRUD機能、トレーニングログのCRUD・検索機能、ページネーション</li>
+              <li>主な機能 : <br>ユーザー認証、マイページ、トレーニングログ作成・編集・削除・検索、ページネーション</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/workout">https://github.com/Michi1090/workout</a>
               </li>
@@ -144,28 +151,28 @@
       </article><!-- /.work2 -->
 
       <article class="work3">
-        <a class="link" href="#" target="_blank">
-          <h3>◆自作アプリ②(準備中)</h3>
+        <a class="link" href="https://github.com/Michi1090/production_control" target="_blank">
+          <h3>◆生産管理システム 『PCOS』(現在開発中)</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
-            <a href="#" target="_blank">
+            <a href="https://github.com/Michi1090/production_control" target="_blank">
               <img class="img-link" src="images/work.jpeg">
             </a>
           </div>
           <li class="work-info">
             <ul>
-              <li>制作時期 : 2022年**月中旬～下旬</li>
-              <li>使用技術 : <br>hoge/hoge/hoge/hoge/hoge/hoge</li>
-              <li>主な機能 : <br>hogehoge、hogehoge、hogehoge、hogehoe</li>
+              <li>制作時期 : 2022年3月下旬～</li>
+              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP(Laravel), MySQL, Docker, Gitflow</li>
+              <li>主な機能 : <br>ユーザー認証（メールアドレス認証付き）、マイページ、生産・出荷登録、在庫照会、部品発注、製品マスタ照会</li>
               <li>
-                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/app2">https://github.com/Michi1090/app2</a>
+                ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/production_control">https://github.com/Michi1090/production_control</a>
               </li>
             </ul>
         </div>
         </div>
         <div class="work-description">
-          <p>現在制作中</p>
+          <p>前職までの経験 × ITスキルの掛け合わせというテーマで、製造業で使用する生産管理のERPシステムを開発しています。バックエンドのフレームワークにはLaravel, インフラはDockerでLAMP環境を構築、開発手法は個人開発ながら疑似的なGitflowを取り入れました。まだ開発中のため完成品はご覧いただけませんが、Docker環境があればGitHubからイメージをプルして、開発途中の作品を試していただくとことが可能です。</p>
         </div>
       </article><!-- /.work3 -->
     </section><!-- /#works -->
@@ -183,24 +190,24 @@
       <article class="activities">
         <h3>◆Activities</h3>
         <div class="act-item">
-          <p class="act-date">2022.02.27</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/fcd6ad529823c7024e55" target="_blank">「プログラミング初学者が学習前に知っておきたかったネットワーク専門用語5選」</a> を投稿しました</p>
+          <p class="act-date">2022.03.27</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/66d32fb05ed85f9b58d5" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【マイページ・パスワード変更機能編】</a> を投稿しました</p>
         </div>
         <div class="act-item">
-          <p class="act-date">2022.02.20</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/888f3e4784186b7e0ab3" target="_blank">【コラム】未経験からエンジニア転職を目指す人たちの正しい情報の取り方とは？</a> を投稿しました</p>
+          <p class="act-date">2022.03.20</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/efcc179103b1f452288b" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【ユーザー登録編】</a> を投稿しました</p>
         </div>
         <div class="act-item">
-          <p class="act-date">2022.02.13</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/150f4cd178155072f44c" target="_blank">PHPでお問い合わせフォームを作成する②</a> を投稿しました</p>
+          <p class="act-date">2022.03.13</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/67db6a38bb63752237e7" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【ログイン・ログアウト編】</a> を投稿しました</p>
         </div>
         <div class="act-item">
-          <p class="act-date">2022.02.06</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/a575375e3db3fc6a2a90" target="_blank">PHPでお問い合わせフォームを作成する①</a> を投稿しました</p>
+          <p class="act-date">2022.03.06</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/ad7a0b62471824d62a0f" target="_blank">【加筆・修正版】PHPでお問い合わせフォームを作成する</a> を投稿しました</p>
         </div>
         <div class="act-item act-bottom">
-          <p class="act-date">2022.01.30</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/094a13cad3133e97d202" target="_blank">WSL2(Ubuntu)でGitHubを使用する</a> を投稿しました</p>
+          <p class="act-date">2022.02.27</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/fcd6ad529823c7024e55" target="_blank">「プログラミング初学者が学習前に知っておきたかったネットワーク専門用語5選」</a> を投稿しました</p>
         </div>
       </article><!-- /.activities -->
 
