@@ -249,7 +249,6 @@ header {
 
 /* Skills */
 .skills{
-
   h4 {
     font-size: 1rem;
     margin-bottom: 5px;
@@ -301,7 +300,10 @@ header {
 
 .work-img {
   width: 47%;
-  border: 1px solid black;
+
+  img {
+    border: 1px solid black;
+  }
 }
 
 .work-info {

@@ -18,7 +18,7 @@ https://michi-programming.com/
 Windows10, XAMPP, VScode
 
 ## 開発理由
-初めてのプログラミングでHTMLとCSSを学んだ後、「とりあえず何か作ってみたい！」という思いから作成しました。
+初めてのプログラミングでHTMLとCSSを学んだ後、「とりあえず何か作ってみたい！」という思いから制作しました。
 
 ## 使用技術
 HTML, CSS, Sass, JavaScript, jQuery, PHP
@@ -27,7 +27,7 @@ HTML, CSS, Sass, JavaScript, jQuery, PHP
 - 自己紹介、ポートフォリオ集、Qiita記事などの掲載
 - メインビジュアルのスライドショー
 - お問い合わせフォーム
-- レスポンシブデザイン対応
+- レスポンシブデザイン
 
 ## こだわりポイント
 シンプルで見やすいサイトを心がけながらも、要所でjQueryを使用し動きを付けました。  

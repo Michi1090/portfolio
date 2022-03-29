@@ -76,14 +76,14 @@
         <h3>◆Skills</h3>
         <div class="programming">
           <h4>IT・プログラミング</h4>
-          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6, MySQL5.7/MariaDB10.3, Linux(Ubuntu), Git/GitHub, Docker</p>
+          <p>HTML Living Standard, CSS3, Sass(Scss), Bootstrap5, JavaScript(ES6), jQuery3.6, PHP7.4, Laravel6, VBA12, MySQL5.7/MariaDB10.3, Linux(Ubuntu), Git/GitHub, Docker</p>
         </div>
         <div class="experience">
           <h4>前職までの経験</h4>
           <p class="paragraph">前職・前々職では、一貫して製造業で生産管理業務に従事していました。生産管理とは生産・販売・在庫・物流を一手に管理するサプライチェーンの司令塔であり、工場の調整役でもあります。主な業務としては、</p>
           <ol class="paragraph">
             <li>お客様からの受注を基に生産計画を策定</li>
-            <li>関係各部門に根回しをして周囲のコンセンサスを得る</li>
+            <li>関係各部門に根回しをして計画に対してのコンセンサスを得る</li>
             <li>策定した計画に対し遅延がないよう日々管理する</li>
             <li>トラブルが発生した場合は速やかに対応策を検討し、対処する</li>
           </ol>
@@ -112,7 +112,7 @@
             <ul>
               <li>制作時期 : 2021年12月中旬～下旬</li>
               <li>使用技術 : <br>HTML, CSS, Sass, JavaScript, jQuery, PHP</li>
-              <li>主な機能 : <br>自己紹介ページ、メインビジュアルのスライドショー、お問い合わせフォーム、レスポンシブデザイン対応</li>
+              <li>主な機能 : <br>自己紹介ページ、メインビジュアルのスライドショー、お問い合わせフォーム、レスポンシブデザイン</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/portfolio">https://github.com/Michi1090/portfolio</a>
               </li>
@@ -157,7 +157,7 @@
         <div class="work-item">
           <div class="work-img">
             <a href="https://github.com/Michi1090/production_control" target="_blank">
-              <img class="img-link" src="images/work.jpeg">
+              <img class="img-link" src="images/work-3.jpg">
             </a>
           </div>
           <li class="work-info">

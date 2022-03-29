@@ -280,6 +280,8 @@ header {
 
 .work-img {
   width: 47%;
+}
+.work-img img {
   border: 1px solid black;
 }
 
