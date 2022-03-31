@@ -99,12 +99,12 @@
     <section id="works">
       <h2>Works</h2>
       <article class="work1">
-        <a class="link" href="https://michi-programming.com" target="_blank">
+        <a class="link" href="#">
           <h3>◆Michi's Portfolio(当サイト)</h3>
         </a>
         <div class="work-item">
           <div class="work-img">
-            <a href="https://michi-programming.com" target="_blank">
+            <a href="#">
               <img class=" img-link" src="images/work-1.jpg">
             </a>
           </div>
