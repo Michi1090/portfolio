@@ -137,7 +137,7 @@
           <li class="work-info">
             <ul>
               <li>制作時期 : 2022年2月中旬～3月中旬</li>
-              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MySQL/MariaDB</li>
+              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP, MySQL</li>
               <li>主な機能 : <br>ユーザー認証、マイページ、トレーニングログ作成・編集・削除・検索、ページネーション</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/workout">https://github.com/Michi1090/workout</a>

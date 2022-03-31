@@ -1,5 +1,6 @@
 <?php
 
+require_once('email.php');
 session_start();
 
 /* 以下、メール送信の処理
@@ -40,27 +41,17 @@ if (!empty($_SESSION['token']) && $_POST['token'] === $_SESSION['token']) {
   　ご返信いただいても、お答えいたしかねますのでご了承ください。
   EOM;
 
-  // 送信元のメールアドレスを変数fromEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
-  $fromEmail = "hoge@yahoo.co.jp";
-  // 本番用
-  // $fromEmail = "@yahoo.co.jp";
-
   // 送信元の名前を変数fromNameに格納
   $fromName = "Michi's Portfolio";
 
   // ヘッダ情報を変数headerに格納する
   $header = "From: " . mb_encode_mimeheader($fromName) . "<{$fromEmail}>";
 
-  // 受信用のメールアドレスを変数myEmailに格納(本番環境へのデプロイ時に正規のアドレスに変更すること！)
-  $myEmail = "hoge@gmail.com";
-  // 本番用
-  // $myEmail = "@gmail.com";
-
   // フォーム入力者へメールを送信する
   mb_send_mail($email, $subject, $body, $header);
 
   // サイト管理者へメールを送信する
-  mb_send_mail($myEmail, $subject, $body, $header);
+  mb_send_mail($toEmail, $subject, $body, $header);
 } else {
   // トークンが一致しない場合、不正アクセス画面へ移動する
   header(("location: alert.php"));
