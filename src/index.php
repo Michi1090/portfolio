@@ -163,7 +163,7 @@
           <li class="work-info">
             <ul>
               <li>制作時期 : 2022年3月下旬～</li>
-              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP(Laravel), MySQL, Docker, Gitflow</li>
+              <li>使用技術 : <br>HTML, CSS, Bootstrap, PHP(Laravel), MySQL, Docker, Git-flow</li>
               <li>主な機能 : <br>ユーザー認証（メールアドレス認証付き）、マイページ、生産・出荷登録、在庫照会、部品発注、製品マスタ照会</li>
               <li>
                 ソースコード(GitHub) : <br><a class="link" target="_blank" href="https://github.com/Michi1090/production_control">https://github.com/Michi1090/production_control</a>
@@ -172,7 +172,7 @@
         </div>
         </div>
         <div class="work-description">
-          <p>前職までの経験 × ITスキルの掛け合わせというテーマで、製造業で使用する生産管理のERPシステムを開発しています。バックエンドのフレームワークにはLaravel, インフラはDockerでLAMP環境を構築、開発手法は個人開発ながら疑似的なGitflowを取り入れました。まだ開発中のため完成品はご覧いただけませんが、Docker環境があればGitHubからイメージをプルして、開発途中の作品を試していただくとことが可能です。</p>
+          <p>前職までの経験 × ITスキルの掛け合わせというテーマで、製造業で使用する生産管理のERPシステムを開発しています。バックエンドのフレームワークにはLaravel, インフラはDockerでLAMP環境を構築、開発手法は個人開発ながら疑似的なGit-flowを取り入れました。まだ開発中のため完成品はご覧いただけませんが、Docker環境があればGitHubからイメージをプルして、開発途中の作品を試していただくとことが可能です。</p>
         </div>
       </article><!-- /.work3 -->
     </section><!-- /#works -->
