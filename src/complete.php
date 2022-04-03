@@ -1,6 +1,6 @@
 <?php
 
-require_once('email.php');
+require_once 'email.php';
 session_start();
 
 /* 以下、メール送信の処理
