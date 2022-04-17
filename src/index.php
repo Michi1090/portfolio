@@ -190,6 +190,10 @@
       <article class="activities">
         <h3>◆Activities</h3>
         <div class="act-item">
+          <p class="act-date">2022.04.17</p>
+          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/48dc21c699c482d4eb9d" target="_blank">初学者がDockerを触る前に知っておきたいこと</a> を投稿しました</p>
+        </div>
+        <div class="act-item">
           <p class="act-date">2022.04.10</p>
           <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/a74da2c9dd80d3de77ac" target="_blank">【コラム】プログラミング未経験者が独学で4か月間勉強した軌跡</a> を投稿しました</p>
         </div>
@@ -201,13 +205,9 @@
           <p class="act-date">2022.03.27</p>
           <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/66d32fb05ed85f9b58d5" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【マイページ・パスワード変更機能編】</a> を投稿しました</p>
         </div>
-        <div class="act-item">
-          <p class="act-date">2022.03.20</p>
+        <div class="act-item act-bottom"">
+          <p class=" act-date">2022.03.20</p>
           <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/efcc179103b1f452288b" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【ユーザー登録編】</a> を投稿しました</p>
-        </div>
-        <div class="act-item act-bottom">
-          <p class="act-date">2022.03.13</p>
-          <p class="act-info"><a class="link" href="https://qiita.com/Michi1090/items/67db6a38bb63752237e7" target="_blank">PHP + MySQLフルスクラッチでユーザー認証機能を実装する【ログイン・ログアウト編】</a> を投稿しました</p>
         </div>
       </article><!-- /.activities -->
 
